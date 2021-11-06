@@ -1,3 +1,11 @@
-<p>
-  product works!
-</p>
+<div id="product-main">
+  <div class="product-container" *ngFor="let item of products">
+    <div class="product-image-container">
+      <img class="product-image" [src]="item.imagepath">
+    </div>
+
+    <h3 class="product-header">{{ item.name }}</h3>
+
+    <p class="product-desc">{{ item.desc }}</p>
+  </div>
+</div>
